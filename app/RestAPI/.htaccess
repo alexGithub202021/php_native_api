@@ -1,0 +1,11 @@
+# Options +FollowSymLinks -MultiViews
+# RewriteEngine On
+# RewriteBase /
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^api/([a-zA-Z_-]*)$ api.php?name=$1
+# # RewriteRule api testCallRestAPI.php
+# RewriteRule .* ../index.php
+
+# RewriteEngine On
+# RewriteRule ^api testCallRestAPI.php
